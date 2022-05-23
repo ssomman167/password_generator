@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+ 
+<div class="container">
+	<h2>Password Generator</h2>
+	<div class="result-container">
+		<span class="result"></span>
+		<button class="btn" id="clipboard">
+			<i class="far fa-clipboard"></i>
+		</button>
+	</div>
+
+
+	<div class="bigbox">
+		<div class="innerbox">
+			<label>Password length</label>
+			<input type="number" id="length" min='4' max='20' value="10"  />
+		</div>
+		<div class="innerbox">
+			<label>Include uppercase letters</label> 
+			<input type="checkbox" class="uppercase" checked />
+		</div>
+		<div class="innerbox">
+			<label>Include lowercase letters</label> 
+			<input type="checkbox" class="lowercase" checked />
+		</div>
+		<div class="innerbox">
+			<label>Include numbers</label> 
+			<input type="checkbox" class="numbers" checked />
+		</div>
+		<div class="innerbox">
+			<label>Include symbols</label> 
+			<input type="checkbox" class="symbols" checked />
+		</div>
+	</div>
+
+
+	<button class="btn btn-large" id="generate"  >
+		Generate password
+	</button>
+</div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
